@@ -2,43 +2,92 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <title>Frontend Mentor | Social proof section</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+	<title>Frontend Mentor | Social proof section</title>
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  10,000+ of our users love our products.
+	<main class="flex">
 
-  We only provide great products combined with excellent customer service.
-  See what our satisfied customers are saying about our services.
+		<div class="conteiner">
 
-  Rated 5 Stars in Reviews
-  Rated 5 Stars in Report Guru
-  Rated 5 Stars in BestTech
+			<!-- section header -->
+			<section class="content__item content__item_header">
+				<h1>10,000+ of our users love our products.</h1>
+				<p>We only provide great products combined with excellent customer service.
+					See what our satisfied customers are saying about our services.</p>
+			</section>
 
-  Colton Smith
-  Verified Buyer
-  "We needed the same printed design as the one we had ordered a week prior.
-  Not only did they find the original order, but we also received it in time.
-  Excellent!"
+			<!-- section rates -->
+			<section class="content__item content__item_rates">
+				<div class="rates_item">
+					<span>Rated 5 Stars in Reviews</span>
+				</div>
+				<div class="rates_item">
+					<span>Rated 5 Stars in Report Guru</span>
+				</div>
+				<div class="rates_item">
+					<span>Rated 5 Stars in BestTech</span>
+				</div>
+			</section>
 
-  Irene Roberts
-  Verified Buyer
-  "Customer service is always excellent and very quick turn around. Completely
-  delighted with the simplicity of the purchase and the speed of delivery."
+			<!-- section klient -->
+			<section class="content__item content__item_klient">
+				<div class="item_foto">
+					<img src="images/image-colton.jpg" alt="image-colton">
+				</div>
+				<div class="item_name">
+					<h2>Colton Smith</h2>
+					<span>Verified Buyer</span>
+				</div>
+				<div class="item_mesage">
+					<p> "We needed the same printed design as the one we had ordered a week prior.
+						Not only did they find the original order, but we also received it in time.
+						Excellent!"
+					</p>
+				</div>
+			</section>
 
-  Anne Wallace
-  Verified Buyer
-  "Put an order with this company and can only praise them for the very high
-  standard. Will definitely use them again and recommend them to everyone!"
+			<section class="content__item content__item_klient">
+				<div class="item_foto">
+					<img src="images/image-irene.jpg" alt="image-irene">
+				</div>
+				<div class="item_name">
+					<h2>Irene Roberts</h2>
+					<span>Verified Buyer</span>
+				</div>
+				<div class="item_mesage">
+					<p> "Customer service is always excellent and very quick turn around. Completely
+						delighted with the simplicity of the purchase and the speed of delivery."
+					</p>
+				</div>
+			</section>
 
-  <footer></footer>
-  <script src="resourse/fem-footer.js"></script>
+			<section class="content__item content__item_klient">
+				<div class="item_foto">
+					<img src="images/image-anne.jpg" alt="image-anne">
+				</div>
+				<div class="item_name">
+					<h2>Anne Wallace</h2>
+					<span>Verified Buyer</span>
+				</div>
+				<div class="item_mesage">
+					<p> "Put an order with this company and can only praise them for the very high
+						standard. Will definitely use them again and recommend them to everyone!"
+					</p>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer></footer>
+	<script src="resourse/fem-footer.js"></script>
 </body>
 
 </html>
