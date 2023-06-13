@@ -211,7 +211,7 @@ body {
 	color: $color-Light-Grayish-Magenta;
 
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: $ico-w * 2 repeat(2, 1fr);
 	grid-auto-flow: row;
 	row-gap: $gap;
 	align-items: center;
