@@ -79,9 +79,6 @@ body {
 	align-items: center;
 }
 
-// ================
-// Content styles
-
 .conteiner {
 	width: 100%;
 	margin: 100px 20px 0;
@@ -89,17 +86,52 @@ body {
 	@media (min-width: 768px) {
 		width: $card-w;
 	}
+
+	@media (min-width: 1200px) {
+		width: $content-w;
+		margin: 0 20px;
+	}
 }
 
+@media (min-width: 1200px) {
+	.row__header {
+		display: grid;
+		max-height: $section-h;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.row__klients {
+		margin: $gap * 2 auto;
+		display: grid;
+		min-height: $section-h;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: $gap;
+
+		& :last-child {
+			align-self: end;
+		}
+
+		& :nth-child(2) {
+			align-self: center;
+		}
+	}
+}
+
+// ================
+// Content styles
+
 .content__item {
-	width: 100%;
-	margin-bottom: $gap;
+	@media (max-width: 1200px) {
+		width: 100%;
+		margin-bottom: $gap;
+	}
 }
 
 // <!-- section header -->
 
 .content__item_header {
 	text-align: center;
+
 	& h1 {
 		font-size: 3em;
 		font-weight: $w7;
@@ -110,6 +142,12 @@ body {
 		margin-top: $gap;
 		color: $color-Dark-Grayish-Magenta;
 	}
+
+	@media (min-width: 1200px) {
+		width: $rate-w;
+		text-align: left;
+		padding: 0 $gap;
+	}
 }
 
 // <!-- section rates -->
@@ -117,7 +155,16 @@ body {
 .content__item_rates {
 	display: grid;
 	grid-template-rows: repeat(3, minmax($rate-h, 1fr));
-	row-gap: 10px;
+	row-gap: 15px;
+
+	@media (min-width: 1200px) {
+		& :nth-child(2) {
+			justify-self: center;
+		}
+		& :last-child {
+			justify-self: end;
+		}
+	}
 }
 
 .rates_item {
@@ -140,7 +187,18 @@ body {
 			background-size: 17px;
 			background-repeat: repeat-x;
 			margin: 0 auto 5px;
+
+			@media (min-width: 1200px) {
+				display: inline-block;
+				height: 15px;
+				margin: 5px $gap 0 auto;
+			}
 		}
+	}
+
+	@media (min-width: 1200px) {
+		width: $rate-w;
+		height: $rate-h;
 	}
 }
 
@@ -157,8 +215,22 @@ body {
 	grid-auto-flow: row;
 	row-gap: $gap;
 	align-items: center;
+
+	@media (min-width: 1200px) {
+		width: $card-w;
+		height: $card-h;
+	}
 }
+
 .item_foto {
+	width: $ico-w * 1.5;
+	height: $ico-w * 1.5;
+	border-radius: 50%;
+	overflow: hidden;
+
+	& img {
+		width: 100%;
+	}
 }
 
 .item_name {
